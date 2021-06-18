@@ -1,0 +1,104 @@
+
+*,
+*::before,
+*::after 
+     box-sizing: border-box
+     margin: 0
+     padding: 0
+
+body
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 100vh
+  background: rgb(181,181,181)
+  background: radial-gradient(circle, rgba(181,181,181,1) 0%, rgba(34,34,34,1) 100%)
+.container
+  position: relative
+  top: 130px
+  display: grid 
+  grid-template-rows: 50px 100px 50px repeat(2, 100px) 50px repeat(3, 100px) 50px 100px
+  grid-template-columns: repeat(3, 100px)
+  gap: 10px
+
+.container > a
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background-color: rgba(255, 255, 255, 1)
+  border-radius: 20px
+  border: solid 3px black
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+p
+  font-size: 40px
+  font-family: 'Shadows Into Light', cursive
+  color: #444444
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC
+  color: #444444
+  //IKONKI ***********************************************************
+a, a:link, a:visited
+  text-decoration: none
+  decoration: none
+.family
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background-color: rgba(255, 255, 255, 1)
+  border-radius: 20px
+  border: solid 3px black
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+#foldable
+  grid-row: 1/2
+  grid-column: 1/4
+#S
+  grid-row: 3/4
+  grid-column: 1/4
+#A
+  grid-row: 6/7
+  grid-column: 1/4
+#M
+  grid-row: 10/11
+  grid-column: 1/4
+.m11
+  transform: translate(33%,0)
+.m12
+  transform: translate(66%,0)
+#family
+  letter-spacing: 6px
+img
+  height: 60px
+  width: same-as-height
+h1  
+  font-size: 14px
+  letter-spacing: -1px
+  font-family: 'Baloo 2', cursive
+  color: black
+
+.navbar 
+  display: flex
+  overflow: hidden
+  justify-content: space-around
+  background-color: black
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 2
+
+
+.navbar a 
+  float: left
+  display: block
+  color: #f2f2f2
+  text-align: center
+  padding-top: 10px
+  padding-bottom: 10px
+  text-decoration: none
+  font-size: 14px
+
+
+.navbar a:hover 
+  background: #ddd
+  color: black
