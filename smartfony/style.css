@@ -22,8 +22,8 @@ body {
 }
 
 .container {
-  -webkit-transform: translate(0, 10%);
-          transform: translate(0, 10%);
+  -webkit-transform: translate(0, 5%);
+          transform: translate(0, 5%);
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 50px 100px 50px (100px)[2] 50px (100px)[3] 50px 100px;
