@@ -24,8 +24,8 @@ body {
 }
 
 .container {
-  -webkit-transform: translate(0, 100px);
-          transform: translate(0, 100px);
+  -webkit-transform: translate(0, 200px);
+          transform: translate(0, 200px);
   display: -ms-grid;
   display: grid;
   width: 300px;
