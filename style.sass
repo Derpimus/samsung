@@ -30,9 +30,6 @@ body
   border-radius: 20px
   border: solid 3px black
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
-.kafelek1
-.kafelek2
-.kafelek3
 p
   font-size: 50px
   font-family: 'PT Sans', sans-serif
@@ -42,5 +39,24 @@ p
 a, a:link, a:visited
   text-decoration: none
   decoration: none
-
-  
+a:nth-child(1)
+  animation: slide .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+  animation-delay: .4s
+a:nth-child(2)
+  animation: slide .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+  animation-delay: .3s
+a:nth-child(3)
+  animation: slide .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+  animation-delay: .2s
+a:nth-child(4)
+  animation: slide .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+  animation-delay: .1s
+a:nth-child(5)
+  animation: slide .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+@keyframes slide
+  0%
+    transform: translateY(-1000px)
+    opacity: 0
+  100%
+    transform: translateY(0)
+    opacity: 1

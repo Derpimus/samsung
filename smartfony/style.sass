@@ -28,6 +28,7 @@ body
   border-radius: 20px
   border: solid 3px black
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
 p
   font-size: 40px
   font-family: 'Shadows Into Light', cursive
@@ -47,6 +48,7 @@ a, a:link, a:visited
   border-radius: 20px
   border: solid 3px black
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+  animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
 #foldable
   grid-row: 1/2
   grid-column: 1/4
@@ -60,9 +62,11 @@ a, a:link, a:visited
   grid-row: 10/11
   grid-column: 1/4
 .m11
-  transform: translate(33%,0)
+  position: relative
+  left: 55px
 .m12
-  transform: translate(66%,0)
+  position: relative
+  left: 55px
 #family
   letter-spacing: 6px
 img
@@ -99,3 +103,21 @@ h1
 .navbar a:hover 
   background: #ddd
   color: black
+
+@keyframes slide-in-left 
+  0% 
+    transform: translateX(-500px)
+    opacity: 0
+  
+  100% 
+    transform: translateX(0)
+    opacity: 1
+
+@keyframes slide-in-right 
+  0% 
+    transform: translateX(500px)
+    opacity: 0
+  
+  100% 
+    transform: translateX(0)
+    opacity: 1
